@@ -18,8 +18,14 @@ Route::get('/', function () {
         "user" => "Antonio",
         "greeting" => "First Project in Laravel",
         "links" => [
-            "about",
-            "contact"
+            [
+                "name" => "About Us",
+                "href" => "about"
+            ],
+            [
+                "name" => "Contact Us",
+                "href" => "contact"
+            ],
         ]
     ];
 

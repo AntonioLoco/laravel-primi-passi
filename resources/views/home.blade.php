@@ -34,7 +34,7 @@
 
     <ul>
         @foreach ($links as $link)
-            <li><a href="{{ route($link) }}">{{ $link }}</a></li>
+            <li><a href="{{ route($link['href']) }}">{{ $link['name'] }}</a></li>
         @endforeach
     </ul>
 </body>
